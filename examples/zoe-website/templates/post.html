@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Basic SEO -->
+    <title>{{title}}</title>
+    <meta name="description" content="{{description|site.description}}">
+    <meta name="keywords" content="{{keywords|site.seo.keywords}}">
+    <meta name="author" content="{{author|site.seo.author}}">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{site.seo.favicon}}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{site.seo.favicon}}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="{{site.base_url}}{{current_url}}">
+    <meta property="og:title" content="{{title}}">
+    <meta property="og:description" content="{{description|site.description}}">
+    <meta property="og:image" content="{{site.base_url}}{{banner_image|site.seo.default_image}}">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="{{site.seo.twitter_card_type}}">
+    <meta name="twitter:site" content="{{site.seo.twitter_handle}}">
+    <meta name="twitter:title" content="{{title}}">
+    <meta name="twitter:description" content="{{description|site.description}}">
+    <meta name="twitter:image" content="{{site.base_url}}{{banner_image|site.seo.default_image}}">
+
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- Add MathJax for LaTeX rendering -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- Add Prism.js for code highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+    <!-- Add languages you want to support (or use the autoloader) -->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-zig.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-bash.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-javascript.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="/">Home</a>
+                <a href="/posts/">Blog</a>
+                <a href="/docs/">Docs</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <article class="blog-post">
+                <h1>{{title}}</h1>
+                <div class="post-meta">
+                    <span class="post-date">{{date}}</span>
+                </div>
+                <div class="post-content">
+                    {{content}}
+                </div>
+                <div class="post-footer">
+                    <a href="/posts/">← Back to all posts</a>
+                </div>
+            </article>
+        </div>
+    </main>
+</body>
+</html>

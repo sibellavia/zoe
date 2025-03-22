@@ -1,0 +1,25 @@
+{
+  "site": {
+    "title": "my-zoe-site",
+    "description": "A site built with Zoe",
+    "base_url": "http://localhost:8080"
+  },
+  "build": {
+    "output_dir": "public",
+    "assets_dir": "static"
+  },
+  "seo": {
+    "twitter_handle": "",
+    "twitter_card_type": "summary_large_image",
+    "default_image": "/static/images/default-banner.jpg",
+    "favicon": "/static/images/favicon.ico",
+    "google_analytics": "",
+    "enable_sitemap": true,
+    "author": "Your Name",
+    "keywords": "blog, technology, programming, zig"
+  },
+  "github_pages": {
+    "branch": "gh-pages",
+    "cname": ""
+  }
+}
