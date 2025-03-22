@@ -1,0 +1,47 @@
+# Zig build artifacts
+zig-cache/
+.zig-cache/
+zig-out/
+/release/
+/debug/
+/build/
+/build-*/
+
+# Binary files
+*.exe
+*.pdb
+*.obj
+*.o
+*.lib
+*.dll
+*.dylib
+*.so
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+
+# Local development
+.env
+.env.* 

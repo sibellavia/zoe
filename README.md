@@ -14,6 +14,36 @@ Zoe is built on three core principles:
 
 3. **Technical Focus**: First-class support for LaTeX equations and syntax-highlighted code blocks.
 
+## Quick Start
+
+1. **Building**
+   ```bash
+   git clone https://github.com/yourusername/zoe.git
+   cd zoe
+   zig build
+   ```
+
+2. **Create a New Site**
+   ```bash
+   zoe init my-site
+   cd my-site
+   ```
+
+3. **Add Content**
+   Create Markdown files in the `content` directory with your posts or pages.
+
+4. **Generate Site**
+   ```bash
+   zoe build
+   ```
+
+5. **Preview**
+   ```bash
+   zoe serve
+   ```
+
+For detailed documentation, configuration options, and advanced features, please refer to the [comprehensive documentation](docs/DOC.md).
+
 ## LICENSE
 
 Zoe is licensed under the MIT license. See the [LICENSE](LICENSE) file for details.
