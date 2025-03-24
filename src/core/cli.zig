@@ -1,7 +1,7 @@
 const std = @import("std");
 const commands = @import("../cmd/commands.zig");
 
-const VERSION = "0.0.1";
+const VERSION = "0.1.0";
 
 pub const CliError = error{
     UnknownCommand,

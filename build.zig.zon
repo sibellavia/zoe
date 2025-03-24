@@ -1,7 +1,7 @@
 .{
     .fingerprint = 0x799ad62b7ba2ee2c,
     .name = .zoe,
-    .version = "0.0.1",
+    .version = "0.1.0",
     .dependencies = .{
         .@"cmark-gfm" = .{
             .url = "https://github.com/github/cmark-gfm/archive/refs/tags/0.29.0.gfm.13.tar.gz",

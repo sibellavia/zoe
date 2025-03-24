@@ -1,6 +1,6 @@
 # Zoe: A Minimalist Static Site Generator
 
-> **Note:** Zoe is at version 0.0.1 and while functional, it's still under development. The API and features may change significantly before the first stable release. Zoe tracks Zig's version 0.14.0.
+> **Note:** Zoe is at version 0.1.0 and while functional, it's still under development. The API and features may change significantly before the first stable release. Zoe tracks Zig's version 0.14.0.
 
 Zoe is a lightweight static site generator written in Zig, designed specifically for technical writing and blogging. It converts Markdown files into clean HTML while properly handling technical content like LaTeX equations and code blocks.
 
